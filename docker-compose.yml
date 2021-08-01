@@ -3,6 +3,8 @@ services:
   app:
     build: ./app
     container_name: "Flask_App_new"
+    links:
+      - db
     ports:
       - "5000:5000"
 
